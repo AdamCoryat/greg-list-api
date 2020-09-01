@@ -10,13 +10,12 @@ export default class Job{
 
   get Template(){
     return ` <div class="col-4">
-    <div class="card">
+    <div class="card m-2">
         <div class="card-body">
             <h4 class="card-title">${this.company} - ${this.jobTitle} - ${this.hours}/${this.rate}</h4>
             <p class="card-text">${this.description}</p>
             <div class="d-flex justify-content-between">
-                <button class="btn btn-outline-danger" onclick="app.carsController.removeCar('${this.id}')">Delete</button>
-                <button class="btn btn-outline-info" onclick="app.carsController.bid('${this.id}')">+ $100</button>
+                <button class="btn btn-outline-danger" onclick="app.jobsController.removeJob('${this.id}')">Delete</button>
             </div>
         </div>
     </div>

@@ -12,7 +12,7 @@ export default class Car {
   get Template() {
     return `            
     <div class="col-4">
-      <div class="card">
+      <div class="card m-2">
           <img class="card-img-top" src="${this.imgUrl}" alt="">
           <div class="card-body">
               <h4 class="card-title">${this.make} - ${this.model} - ${this.year}</h4>

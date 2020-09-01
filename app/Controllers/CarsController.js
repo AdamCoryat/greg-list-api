@@ -6,9 +6,8 @@ function _drawCars() {
   let cars = ProxyState.cars
   let templates = ''
   cars.forEach(c => templates += c.Template)
-  document.getElementById('data').innerHTML = templates
+  document.getElementById('cars').innerHTML = templates
 }
-
 
 //Public
 export default class CarsController {
@@ -70,5 +69,13 @@ export default class CarsController {
     }
   }
 
+  showCars(){
+    document.getElementById('carForm').classList.remove('invisible')
+    document.getElementById('cars').classList.remove('invisible')
+    document.getElementById('houseForm').classList.add('invisible')
+    document.getElementById('houses').classList.add('invisible')
+    document.getElementById('jobForm').classList.add('invisible')
+    document.getElementById('jobs').classList.add('invisible')
+  }
 
 }
