@@ -429,6 +429,10 @@ mark,
   background-color: #fcf8e3;
 }
 
+.hidden{
+  display: none !important;
+}
+
 .list-unstyled {
   padding-left: 0;
   list-style: none;

@@ -70,12 +70,12 @@ export default class CarsController {
   }
 
   showCars(){
-    document.getElementById('carForm').classList.remove('invisible')
-    document.getElementById('cars').classList.remove('invisible')
-    document.getElementById('houseForm').classList.add('invisible')
-    document.getElementById('houses').classList.add('invisible')
-    document.getElementById('jobForm').classList.add('invisible')
-    document.getElementById('jobs').classList.add('invisible')
+    document.getElementById('carForm').classList.remove('hidden')
+    document.getElementById('cars').classList.remove('hidden')
+    document.getElementById('houseForm').classList.add('hidden')
+    document.getElementById('houses').classList.add('hidden')
+    document.getElementById('jobForm').classList.add('hidden')
+    document.getElementById('jobs').classList.add('hidden')
   }
 
 }

@@ -58,4 +58,12 @@ export default class JobsController{
       console.error(error)
     }
   }
+  showJobs(){
+    document.getElementById('carForm').classList.add('hidden')
+    document.getElementById('cars').classList.add('hidden')
+    document.getElementById('houseForm').classList.add('hidden')
+    document.getElementById('houses').classList.add('hidden')
+    document.getElementById('jobForm').classList.remove('hidden')
+    document.getElementById('jobs').classList.remove('hidden')
+  }
 }

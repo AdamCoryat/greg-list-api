@@ -74,4 +74,13 @@ export default class HousesController{
       console.error(error)
     }
   }
+
+  showHouses(){
+    document.getElementById('carForm').classList.add('hidden')
+    document.getElementById('cars').classList.add('hidden')
+    document.getElementById('houseForm').classList.remove('hidden')
+    document.getElementById('houses').classList.remove('hidden')
+    document.getElementById('jobForm').classList.add('hidden')
+    document.getElementById('jobs').classList.add('hidden')
+  }
 }
